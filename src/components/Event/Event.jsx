@@ -21,8 +21,8 @@ const Event = ({ events }) => {
             <div className="header-main">
               <div className="header-main__datetime">
                 {`${moment(event.datetime.start).format(
-                  "d/MMM/YY - hh:mm"
-                )} to ${moment(event.datetime.finish).format("hh:mm")}`}
+                  "d/MMM/YY - HH:mm"
+                )} to ${moment(event.datetime.finish).format("HH:mm")}`}
               </div>
               <div className="header-main__title">{event.title}</div>
               <div className="header-main__location">
