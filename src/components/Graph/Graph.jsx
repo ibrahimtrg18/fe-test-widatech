@@ -1,5 +1,4 @@
 import React from "react";
-import ApexCharts from "apexcharts";
 import Chart from "react-apexcharts";
 
 const Graph = () => {
@@ -52,12 +51,14 @@ const Graph = () => {
     },
   };
 
-  setTimeout(() => {
-    setTemperature([
-      ...temperature,
-      { x: new Date(), y: (Math.random() * 52 + 18).toFixed(2) },
-    ]);
-  }, 10000);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setTemperature([
+        ...temperature,
+        { x: new Date(), y: (Math.random() * 52 + 18).toFixed(2) },
+      ]);
+    }, 10000);
+  }, [temperature]);
 
   return (
     <Chart
