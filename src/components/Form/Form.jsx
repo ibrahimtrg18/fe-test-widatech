@@ -42,15 +42,17 @@ const Form = ({ createEvent }) => {
         onSubmit={async (values) => {
           createEvent(values);
           notify();
-          //mock
-          const res = await fetch("/api/event", {
-            headers: {
-              "Content-Type": "application/json",
-            },
-            method: "POST",
-          });
-          if (res.ok) {
-          }
+
+          //mock using rest api
+          // const res = await fetch("/api/event", {
+          //   headers: {
+          //     "Content-Type": "application/json",
+          //   },
+          //   method: "POST",
+          // });
+          // if (res.ok) {
+          //   notify();
+          // }
         }}
       >
         {({
@@ -91,24 +93,42 @@ const Form = ({ createEvent }) => {
             <label>
               Participants:
               {values.participants.map((participant, index) => (
-                <label key={index}>
-                  participant - {index + 1}
-                  <input
-                    name={`participants[${index}].name`}
-                    type="text"
-                    className="input"
-                    onChange={(e) =>
-                      setFieldValue(
-                        `participants[${index}].name`,
-                        e.target.value
-                      )
-                    }
-                    value={values.participant}
-                  />
-                </label>
+                <div className="participant">
+                  <label key={index}>
+                    name - {index + 1}
+                    <input
+                      name={`participants[${index}].name`}
+                      type="text"
+                      className="input"
+                      onChange={(e) =>
+                        setFieldValue(
+                          `participants[${index}].name`,
+                          e.target.value
+                        )
+                      }
+                      value={values.participant}
+                    />
+                  </label>
+                  <label key={index}>
+                    avatar url - {index + 1}
+                    <input
+                      name={`participants[${index}].avatar`}
+                      type="text"
+                      className="input"
+                      onChange={(e) =>
+                        setFieldValue(
+                          `participants[${index}].avatar`,
+                          e.target.value
+                        )
+                      }
+                      value={values.participant}
+                    />
+                  </label>
+                </div>
               ))}
               <button
                 type="button"
+                className="btn btn-secondary"
                 onClick={() =>
                   setFieldValue("participants", [
                     ...values.participants,

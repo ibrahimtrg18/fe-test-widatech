@@ -8,11 +8,38 @@ const INITIAL_STATE = [
     participants: [
       {
         name: "John Doe",
-        avatar: "",
+        avatar:
+          "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/0/d9/0d98cbc7-0408-518e-a67d-50ba01ca1bfa/5f120523682a4.image.jpg",
       },
       {
         name: "John Doe",
-        avatar: "",
+        avatar:
+          "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/0/d9/0d98cbc7-0408-518e-a67d-50ba01ca1bfa/5f120523682a4.image.jpg",
+      },
+      {
+        name: "John Doe",
+        avatar:
+          "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/0/d9/0d98cbc7-0408-518e-a67d-50ba01ca1bfa/5f120523682a4.image.jpg",
+      },
+      {
+        name: "John Doe",
+        avatar:
+          "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/0/d9/0d98cbc7-0408-518e-a67d-50ba01ca1bfa/5f120523682a4.image.jpg",
+      },
+      {
+        name: "John Doe",
+        avatar:
+          "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/0/d9/0d98cbc7-0408-518e-a67d-50ba01ca1bfa/5f120523682a4.image.jpg",
+      },
+      {
+        name: "John Doe",
+        avatar:
+          "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/0/d9/0d98cbc7-0408-518e-a67d-50ba01ca1bfa/5f120523682a4.image.jpg",
+      },
+      {
+        name: "John Doe",
+        avatar:
+          "https://bloximages.chicago2.vip.townnews.com/nwitimes.com/content/tncms/assets/v3/editorial/0/d9/0d98cbc7-0408-518e-a67d-50ba01ca1bfa/5f120523682a4.image.jpg",
       },
     ],
     notes:

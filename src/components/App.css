@@ -60,6 +60,10 @@ body {
   color: white;
 }
 
+.btn-secondary {
+  background-color: #eee;
+}
+
 .btn-primary:hover {
   box-shadow: 0 0 4px 1px var(--primary-color);
 }
